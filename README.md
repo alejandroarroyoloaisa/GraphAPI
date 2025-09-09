@@ -2,6 +2,11 @@
 
 Esta API permite interactuar con grafos a través de una interfaz web y endpoints RESTful. Utiliza la clase `Grafo` para realizar operaciones y cálculos sobre grafos para el análisis de redes. Para más información, consultar `GraphAPI - Documentación.pdf`.
 
+## Desarrolladores
+
+- Alejandro Arroyo Loaisa
+- José Pablo Soriano Torres
+
 ## Requisitos
 
 - Python 3.8+
