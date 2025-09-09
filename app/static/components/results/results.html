@@ -1,0 +1,115 @@
+<!-- Modal de resultados -->
+<div id="resultsModal" class="results-container">
+    <div class="results-content">
+        <button id="closeResults" class="close-button">&times;</button>
+        
+        <!-- Sección de información general -->
+        <div id="generalInfo" class="results-section">
+            <h3>Información General</h3>
+            <div class="info-grid">
+                <div class="info-item">
+                    <span class="label">Número de Nodos:</span>
+                    <span id="numNodos" class="value">-</span>
+                </div>
+                <div class="info-item">
+                    <span class="label">Número de Aristas:</span>
+                    <span id="numAristas" class="value">-</span>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de métricas -->
+        <div id="metricsSection" class="results-section">
+            <h3>Métricas del Grafo</h3>
+            <div class="metrics-grid">
+                <div class="metric-card">
+                    <h4>Centralidad</h4>
+                    <div id="centralidadResults" class="metric-content"></div>
+                </div>
+                <div class="metric-card">
+                    <h4>Cercanía</h4>
+                    <div id="cercaniaResults" class="metric-content"></div>
+                </div>
+                <div class="metric-card">
+                    <h4>Intermediación</h4>
+                    <div id="intermediacionResults" class="metric-content"></div>
+                </div>
+                <div class="metric-card">
+                    <h4>PageRank</h4>
+                    <div id="pagerankResults" class="metric-content"></div>
+                </div>
+                <div class="metric-card">
+                    <h4>HITS</h4>
+                    <div id="hitsResults" class="metric-content"></div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de detalles del nodo -->
+        <div id="nodeDetails" class="results-section">
+            <h3>Detalles del Nodo</h3>
+            <div class="node-info">
+                <div class="node-header">
+                    <h4>Nodo: <span id="nodeName">-</span></h4>
+                </div>
+                <div class="node-metrics">
+                    <div class="metric-row">
+                        <span class="label">Centralidad:</span>
+                        <span id="nodeCentralidad" class="value">-</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="label">Cercanía:</span>
+                        <span id="nodeCercania" class="value">-</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="label">Intermediación:</span>
+                        <span id="nodeIntermediacion" class="value">-</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="label">PageRank:</span>
+                        <span id="nodePagerank" class="value">-</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="label">Authority:</span>
+                        <span id="nodeAuthority" class="value">-</span>
+                    </div>
+                    <div class="metric-row">
+                        <span class="label">Hub:</span>
+                        <span id="nodeHub" class="value">-</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- Sección de lista de nodos -->
+        <div id="nodesList" class="results-section scroll-section">
+            <h3>Lista de Nodos</h3>
+            <div id="nodesListContent" class="scroll-content">
+                <!-- Los nodos se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+
+        <!-- Sección de lista de aristas -->
+        <div id="edgesList" class="results-section scroll-section">
+            <h3>Lista de Aristas</h3>
+            <div id="edgesListContent" class="scroll-content">
+                <!-- Las aristas se insertarán aquí dinámicamente -->
+            </div>
+        </div>
+
+        <!-- Sección de notificación de métricas -->
+        <div id="metricsNotification" class="results-section">
+            <h3>Métricas Calculadas</h3>
+            <div class="success-message">
+                <span class="success-icon">✓</span>
+                <p>Las métricas han sido calculadas exitosamente</p>
+            </div>
+        </div>
+
+        <!-- Botones de acción -->
+        <div class="action-buttons">
+            <button id="exportResults" class="action-button">Exportar Resultados</button>
+            <button id="clearResults" class="action-button">Limpiar Resultados</button>
+        </div>
+    </div>
+</div> 
